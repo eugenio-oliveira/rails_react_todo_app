@@ -15,7 +15,7 @@ import React, { Component } from 'react';
 
     async checkTask(task) {
        let form = {'task': {'done': 'true'}}
-       await fetch(`http://localhost:3001/tasks/${task.id}`,
+       await fetch(`http://localhost:3000/tasks/${task.id}`,
          {
            method: 'PUT',
            headers: {
